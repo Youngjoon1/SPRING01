@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="pr" class="com.care.di_test.PrintString"></bean>
+	
+	<bean id="psb" class="com.care.di_test.PrintBean">
+		<property name="ps" ref="pr"></property>
+		<property name="print" value="떡볶이"></property>
+	</bean>
+	
+	
+</beans>
